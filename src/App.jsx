@@ -59,7 +59,7 @@ function App() {
               deposit: Yup.number().required('Obligatorio').typeError('Debe ser un numero'),
               contribution: Yup.number().required('Obligatorio').typeError('Debe ser un numero'),
               years: Yup.number().required('Obligatorio').typeError('Debe ser un numero'),
-              rate: Yup.number().required('Obligatorio').typeError('Debe ser un numero'),
+              rate: Yup.number().required('Obligatorio').typeError('Debe ser un numero').min(0,'Debe ser mayor a 0').max(1,'debe ser menor a 1'),
             })}
           >
 
