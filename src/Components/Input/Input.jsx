@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import { useField } from 'formik'
 
 const Control = styled.div`
-    margin-botton: 20px;
+    margin: 20px 0;
 `;
 
 const Label = styled.label`
     color: #000;
     display: block;
     margin-bottom: 5px;
+    text-transform: capitalize;
 `;
 
 const MyInput = styled.input`
@@ -18,11 +19,12 @@ const MyInput = styled.input`
     border: solid 1px #b1b3b5;
     border-radius: 4px;
     width: 100%;
-    margin-bottom: 15px;
+    
 `;
 
 const ErrorMessage = styled.div`
     color: #f00;
+    margin-bottom: 12px;
 `;
 
 
